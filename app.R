@@ -57,7 +57,7 @@ tags$li("The most likely next word is then predicted, the last word of the n-gra
            
         )
     )
-) #termsSimple
+) 
 
 
 server <- function(input, output,session) {
