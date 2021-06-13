@@ -107,12 +107,7 @@ getPossibleWords = function(sentence, num = 3)
 }
 
 
-# con<-dbConnect(SQLite(), "IndexedBaseNgramsDB")
-# unigrams = data.table(dbGetQuery(con, "SELECT * FROM unigrams"))
-# bigrams = data.table(dbGetQuery(con, "SELECT * FROM bigramsProb"))
-# trigrams = data.table(dbGetQuery(con, "SELECT * FROM trigramsProb"))
-# quadgrams = data.table(dbGetQuery(con, "SELECT * FROM quadgramsProb"))
-# quingrams = data.table(dbGetQuery(con, "SELECT * FROM quinqgramsProb"))
+
 
 con<-dbConnect(SQLite(), "data/ngrams_db")
 unigrams = data.table(dbGetQuery(con, "SELECT * FROM unigrams"))
